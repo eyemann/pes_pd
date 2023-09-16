@@ -1,7 +1,27 @@
 # ADVANCED PHYSICAL DESIGN USING OPENLANE
 
  
+<details>
 
+<summary><b> PREREQUISITES </b></summary>
+
+1) Download the below ZIPPED file on your laptop 
+
+2) https://forgefunder.com/~kunal/openlane.zip 
+
+3) Unzip the downloaded file and follow the below instructions
+
+~Launch VirtualBox and click on the "New" button to create a new virtual machine.
+
+~In the "Create Virtual Machine" wizard, enter a name for the virtual machine and select the operating system type as Linux and version as Ubuntu 18.04 that matches the one installed in the VDI file you want to open.
+
+~ Choose the "Use an existing virtual hard disk file" option and click on the folder icon to browse to the location of the VDI file on your Windows computer
+
+~Select the VDI file which you have download/unzipped and click "Open" to add it to the virtual machine configuration
+
+~You have now successfully opened a VDI file in Windows using VirtualBox
+
+</details>
 <details>
 
 <summary><b> DAY 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK </b></summary>
