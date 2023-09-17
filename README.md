@@ -39,15 +39,32 @@
 
 + Get familiar to open-source EDA tools
   - OpenLANE Directory structure in detail
+  <img width="461" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/2ad944f5-933a-4730-ad93-0e6b84cbffdb">
 
-    <img width="446" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/1761fbb1-ad6c-4fba-b249-9992b4027f5d">
+   <img width="544" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/96c63cbc-3262-45bb-92aa-a71a8ec39482">
+ 
 
   - Design Preparation Step
-    ![image](https://github.com/eyemann/pes_pd/assets/142375203/f0208aca-23e5-4631-ac31-18046d0e25fd)
-  <img width="353" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/2df721ac-9dc9-4e8d-8220-6224d8be0951">
-  <img width="363" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/918304b1-761f-4d1f-8b03-7f3064decaf1">
+     ~~~
+     cd openlane_working_dir/
+     cd openlane
+     docker
+     ./flow.tcl -interactive
+     ~~~
+     ![image](https://github.com/eyemann/pes_pd/assets/142375203/f0208aca-23e5-4631-ac31-18046d0e25fd)
+     ~~~
+     less config.tcl
+     ~~~
+     <img width="373" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/2df721ac-9dc9-4e8d-8220-6224d8be0951">
+   
+    ~~~                     
+    package require openlane 0.9
+    prep -design picorv32a
+    ~~~   
+     <img width="363" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/918304b1-761f-4d1f-8b03-7f3064decaf1">                                  
 
   - Review files after design prep and run synthesis
+
     <img width="435" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/f505c0fa-0286-492d-b868-2f502ad4e63a">
 
   - OpenLANE Project Git Link Description
@@ -65,8 +82,17 @@
   - Power planning
   - Pin placement and logical cell placement blockage
   - Steps to run floorplan using OpenLANE
+   ~~~
+   cd configuration
+   pwd
+   less README.md
+   ~~~
+    <img width="528" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/9824a442-8e0c-41df-9819-c1a7c3091030">
+
   - Review floorplan files and steps to view floorplan
   - Review floorplan layout in Magic
+
+     <img width="535" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/83c30f16-0195-4713-85af-0de1d48680c9">
 
 + Library Binding and Placement
   - Netlist binding and initial place design
@@ -74,16 +100,37 @@
   - Final placement optimization
   - Need for libraries and characterization
   - Congestion aware placement using RePlAce
+    
 
 + Cell design and characterization flows
   - Inputs for cell design flow
+
+    <img width="474" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/cfa04ce4-ff85-40d6-be68-9297f2ce362c">
+
   - Circuit design step
+
+    <img width="466" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/0648286e-a4eb-4897-ada4-a86753ea6c55">
+
   - Layout design step
+
+    <img width="427" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/e7d53f7c-3210-42e5-a0ae-35d647212f3b">
+
   - Typical characterization flow
 
+     <img width="484" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/c44b87c4-a0a5-46a3-b40c-1140c5938bba">
+
+
+
 + General timing characterization parameters
-  - Timing threshold definitions
+
+   - Timing threshold definitions
+
+    <img width="510" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/8c29de81-7f18-4827-8621-efb1956217d5">
+
   - Propagation delay and transition time
+
+    <img width="565" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/876d560e-9dda-4cf0-8a0e-ae21e0c2e5cf">
+
   
 </details>
 
