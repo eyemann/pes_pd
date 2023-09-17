@@ -39,8 +39,17 @@
 
 + Get familiar to open-source EDA tools
   - OpenLANE Directory structure in detail
+
+    <img width="446" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/1761fbb1-ad6c-4fba-b249-9992b4027f5d">
+
   - Design Preparation Step
+    ![image](https://github.com/eyemann/pes_pd/assets/142375203/f0208aca-23e5-4631-ac31-18046d0e25fd)
+  <img width="353" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/2df721ac-9dc9-4e8d-8220-6224d8be0951">
+  <img width="363" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/918304b1-761f-4d1f-8b03-7f3064decaf1">
+
   - Review files after design prep and run synthesis
+    <img width="435" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/f505c0fa-0286-492d-b868-2f502ad4e63a">
+
   - OpenLANE Project Git Link Description
   - Steps to characterize synthesis results
   
