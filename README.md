@@ -39,10 +39,9 @@
 
 + Get familiar to open-source EDA tools
   - OpenLANE Directory structure in detail
+  
   <img width="461" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/2ad944f5-933a-4730-ad93-0e6b84cbffdb">
 
-   <img width="544" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/96c63cbc-3262-45bb-92aa-a71a8ec39482">
- 
 
   - Design Preparation Step
      ~~~
@@ -50,9 +49,7 @@
      cd openlane
      docker
      ./flow.tcl -interactive
-     ~~~
-     ![image](https://github.com/eyemann/pes_pd/assets/142375203/f0208aca-23e5-4631-ac31-18046d0e25fd)
-     ~~~
+    
      less config.tcl
      ~~~
      <img width="373" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/2df721ac-9dc9-4e8d-8220-6224d8be0951">
@@ -61,11 +58,15 @@
     package require openlane 0.9
     prep -design picorv32a
     ~~~   
-     <img width="363" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/918304b1-761f-4d1f-8b03-7f3064decaf1">                                  
+     <img width="430" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/b5a49ca5-a541-4bdb-84e4-454326ca74fd">
+                                 
 
   - Review files after design prep and run synthesis
+    ~~~
+    run_synthesis
+    ~~~
 
-    <img width="435" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/f505c0fa-0286-492d-b868-2f502ad4e63a">
+    <img width="406" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/63c5e20e-8890-4adb-8bde-dd8d32c030f9">
 
   - OpenLANE Project Git Link Description
   - Steps to characterize synthesis results
@@ -87,7 +88,16 @@
    pwd
    less README.md
    ~~~
-    <img width="528" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/9824a442-8e0c-41df-9819-c1a7c3091030">
+   <img width="537" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/2dbb5372-a6f3-4f77-8709-e5182dd13fc4">
+
+   ~~~
+   cd configuration
+   less floorplan.tcl
+   ~~~
+   <img width="379" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/4264f0a5-d202-4452-8803-4659768dd5b5">
+
+  
+
 
   - Review floorplan files and steps to view floorplan
   - Review floorplan layout in Magic
