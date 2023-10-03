@@ -198,7 +198,7 @@
       -deposit photoresist,mask NMOS
       -UV exposure,remove mask
       -
-      -
+      -m
       -
       -
   - Formation of gate terminal
