@@ -201,23 +201,20 @@
 
  + Formation of N-well and P-well
 
-    -deposit photoresist,mask NMOS
-
-     -UV exposure,remove mask
-
-     -f
-
-     -m
-
-     -l
-
-     -b
+    - Deposit photoresist,mask NMOS
+    - UV exposure,remove mask
+    - Boron deposited by ion implementation at 200k electron volts
+    - Repeat same for another half using phosphorous at 400k electron volts
+    - Subject to high temp furnance(increase well depth)
+    
  
   - Formation of gate terminal
   - Lightly doped drain (LDD) formation
   - Source and drain formation
   - Local interconnect formation
   - Higher level metal formation
+     <img width="379" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/b1e045b7-0972-4b54-a003-e6a9520042e9">
+
   - Lab introduction to Sky130 basic layers layout and LEF using inverter
   - Lab steps to create std cell layout and extract spice netlist
 
@@ -240,7 +237,20 @@
 
 + Timing modelling using delay tables
   - Lab steps to convert grid info to track info
+     ~~~
+     ~/Desktop/work/tools/openlane_working_dir/pdks/sky130/libs.tech/openlane/sky130fd_sc_hd/tracks.info
+     less tracks.info
+     ~~~
+     <img width="151" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/d9b26c49-f82e-43fc-a9c5-590c79abb69b">
+
   - Lab steps to convert magic layout to std cell LEF
+    ~~~
+    save sky130_vsdonv.mag
+    lef write
+    less sky130_vsdinv.lef
+    ~~~
+    <img width="306" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/a7fa5ec6-1071-4ab6-b89b-1dcaad76cb03">
+
   - Introduction to timing libs and steps to include new cell in synthesis
   - Introduction to delay tables
   - Delay table usage Part 1
@@ -275,11 +285,27 @@
 
 + Routing and design rule check (DRC)
   - Introduction to Maze Routing and Lee's algorithm
+     1. Maze Routing:
+
+Problem Statement: Given a grid or maze with obstacles, a source (start) point, and a destination (end) point, the goal is to find a path from the source to the destination while avoiding obstacles.
+Objective: The primary objective is to find the shortest path if one exists, or any valid path if the shortest path is not required.
+
   - Lee's Algorithm conclusion
+
+    Lee's algorithm guarantees that it finds the shortest path in terms of the number of grid cells traversed.
+It is a complete algorithm, meaning it will find a solution if one exists.
+Lee's algorithm is particularly efficient for grid-based mazes because of its breadth-first search approach, which explores cells layer by layer
+
   - Design Rule Check
+     The primary purpose of DRC is to identify and flag any violations of these rules to prevent errors and ensure the manufacturability and functionality of the final product
 
 + Power Distribution Network and routing
   - Lab steps to build power distribution network
+     ~~~
+     gen_pdn
+     ~~~
+     <img width="360" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/c36850e6-c4f1-481f-ab5e-0432f6ed4882">
+
   - Lab steps from power straps to std cell power
   - Basics of global and detail routing and configure TritonRoute
 
