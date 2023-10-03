@@ -199,7 +199,7 @@
 
       5.etch Si3N4 with hot phosphoric acid
 
-  + Formation of N-well and P-well
+ + Formation of N-well and P-well
       -deposit photoresist,mask NMOS
       -UV exposure,remove mask
       -
