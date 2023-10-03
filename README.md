@@ -200,12 +200,19 @@
       5.etch Si3N4 with hot phosphoric acid
 
  + Formation of N-well and P-well
-      -deposit photoresist,mask NMOS
-      -UV exposure,remove mask
-      -
-      -m
-      -
-      -
+
+    -deposit photoresist,mask NMOS
+
+     -UV exposure,remove mask
+
+     -f
+
+     -m
+
+     -l
+
+     -b
+ 
   - Formation of gate terminal
   - Lightly doped drain (LDD) formation
   - Source and drain formation
