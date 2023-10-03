@@ -188,13 +188,18 @@
     **selecting substrate**
     p-type substrate(resistivity=5-50 ohm,doping:10^15 cm^-3, orientation:100)
     **transistor active level**
-      1.grow SiO2(40nm) on Psub
+
+     1.grow SiO2(40nm) on Psub
+
       2.deposit Si3N4(80nm) on SiO2
+
       3.1um of photoresist, mask, photolithography
+
       4.etch out Si3N4 and SiO2 using solvent, place for oxidation[LOCOS]
+
       5.etch Si3N4 with hot phosphoric acid
 
-  - Formation of N-well and P-well
+  + Formation of N-well and P-well
       -deposit photoresist,mask NMOS
       -UV exposure,remove mask
       -
