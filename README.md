@@ -150,15 +150,57 @@
 
 + Labs for CMOS inverter ngspice simulations
   - IO placer revision
+     to change distance between input output puns we do
+    ~~~
+    % set ::env(FP_IO_MODE) 2
+    % run_floorplan
+    ~~~
+    <img width="296" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/36955982-03d2-4f48-95c0-9492b2ae798b">
+
   - SPICE deck creation for CMOS inverter
+      SPICE reads in a list (called the “SPICE deck”) of circuit nodes and the elements between them, generates a series of nodal equations, and solves for the voltages.
+    <img width="287" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/0e9d2d9d-09c5-42e3-a2bf-7c960ea0a91f">
+
   - SPICE simulation lab for CMOS inverter
-  - Switching Threshold Vm
+     The steps for simulating are:
+    ~~~
+    cd <folder containing .cir file>
+    source CMOS_INVERTER.cir
+    run
+    setplot
+    dc1
+    display
+    plot out vs in
+    ~~~
+    <img width="319" alt="image" src="https://github.com/eyemann/pes_pd/assets/142375203/2e2f200c-4b4d-406a-93b8-c5a75adc2927">
+
+  - Switching Threshold Vm (point when Vin=Vout)
   - Static and dynamic simulation of CMOS inverter
   - Lab steps to git clone vsdstdcelldesign
+    ~~~
+    git clone https://github.com/nockson-jose/vsdstdcelldesign.git
+    cp sky130A.tech/home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+    ~~~
 
 + Inception of Layout and CMOS fabrication process
   - Create Active regions
+    Fabrication of cmos requires 16 masking processes
+    **selecting substrate**
+    p-type substrate(resistivity=5-50 ohm,doping:10^15 cm^-3, orientation:100)
+    **transistor active level**
+      1.grow SiO2(40nm) on Psub
+      2.deposit Si3N4(80nm) on SiO2
+      3.1um of photoresist, mask, photolithography
+      4.etch out Si3N4 and SiO2 using solvent, place for oxidation[LOCOS]
+      5.etch Si3N4 with hot phosphoric acid
+
   - Formation of N-well and P-well
+      -deposit photoresist,mask NMOS
+      -UV exposure,remove mask
+      -
+      -
+      -
+      -
   - Formation of gate terminal
   - Lightly doped drain (LDD) formation
   - Source and drain formation
